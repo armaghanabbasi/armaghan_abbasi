@@ -139,7 +139,7 @@
          On the other side, machine learning is a subset of Artificial intelligence that focuses on teaching machines to make decisions through the use of data. On the other hand, deep learning is a subcategory of
          machine learning that solves complex problems using the concept of neural networks. To sum it up, machine learning, artificial intelligence, and deep learning are all related fields. Deep learning and machine
          learning provide methods and neural networks to solve data-driven problems.</p>
-      <p>In our project, for detecting an object, we have used the artificial intelligence algorithm YOLO V3 (details in Chapter 3). For the intelligent navigation of our robot, we have used a technique called template
+      <p>In our project, for detecting an object, we have used the artificial intelligence algorithm YOLO V3. For the intelligent navigation of our robot, we have used a technique called template
          matching. Template matching is an image processing approach. By combining these two tasks, our robot
          can carry out multiple tasks such as for military purposes and waste management by detecting garbage
          material and notifying the management about the garbage at a particular location.</p>
@@ -157,26 +157,20 @@
 
     <section id="technology">
       <h2>Technologies Used</h2>
-      <h3>Core Communication Technology</h3>
+      <h3>Core AI & Vision Technology</h3>
     <ul>
-      <li><strong>LoRa (Long Range Radio Communication):</strong> Provides low-power, long-range data transmission.</li>
-      <li>Operates on <strong>868/915 MHz ISM bands</strong> with Chirp Spread Spectrum (CSS) modulation.</li>
-      <li>Enables reliable IoT communication over several kilometres.</li>
-      <li>Used for connecting sensor nodes to the <strong>USRP B210 gateway</strong>.</li>
+      <li><strong>YOLO V3 (You Only Look Once):</strong> Deep learning algorithm for high-speed, single-pass object detection. Pre-trained on the COCO dataset to identify 80 common object classes.</li>
+      <li><strong>Template Matching (OpenCV):</strong> Digital image processing technique for autonomous navigation. The robot matches pre-fed template images with real-time camera input to make movement decisions.</li>
     </ul>
 
 
   
     <h3>Hardware Components</h3>
     <ul>
-      <li><strong>USRP B210 (Software Defined Radio):</strong> Acts as LoRa receiver; supports 70 MHz–6 GHz range with full-duplex 2×2 MIMO.</li>
-      <li><strong>LILYGO TTGO LoRa32 (ESP32 + SX1276):</strong> Sensor node with Wi-Fi, Bluetooth, OLED display, and battery circuit.</li>
-      <li><strong>Sensors:</strong> 
-        <ul>
-          <li>DHT11 – Measures temperature (0–50 °C) & humidity (20–90 % RH).</li>
-          <li>LDR – Detects ambient light using LM393 comparator.</li>
-        </ul>
-      </li>
+      <li><strong>NVIDIA Jetson Nano Developer Kit:</strong> The main AI computing unit for running object detection and navigation algorithms.</li>
+      <li><strong>Robot Chassis:</strong> Custom-built Rocker-Bogie structure using UPVC pipes, designed for stability and obstacle traversal.</li>
+      <li><strong>Control & Motility:</strong> Arduino Uno microcontroller paired with IBT-2 Motor Drivers to control six DC Motors.</li>
+      <li><strong>Perception:</strong> USB Camera for live video feed and an Ultrasonic Sensor for basic obstacle distance measurement.</li> 
     </ul>
 
   
