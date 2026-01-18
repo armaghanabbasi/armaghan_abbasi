@@ -19,6 +19,7 @@
       background: var(--bg);
       color: var(--text);
       margin: 0;
+      padding-top: 80px;
       padding: 0;
       line-height: 1.6;
       scroll-behavior: smooth;
@@ -32,6 +33,9 @@
       justify-content: space-between;
       align-items: center;
       box-shadow: var(--shadow);
+      position: sticky;   /* 👈 ADD */
+  top: 0;             /* 👈 ADD */
+  z-index: 1000;
     }
 
     header a {
